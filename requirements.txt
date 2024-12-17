@@ -1,0 +1,18 @@
+# No specific backend requirements needed
+# This is a pure frontend web application
+
+# Recommended browsers
+# - Google Chrome (Latest Version)
+# - Mozilla Firefox (Latest Version)
+# - Safari (Latest Version)
+# - Microsoft Edge (Latest Version)
+
+# Minimum browser requirements
+# - HTML5 support
+# - JavaScript ES6+ support
+# - CSS3 support
+
+# Optional: Live server for local development
+# You can use extensions like:
+# - Live Server (VS Code Extension)
+# - http-server (Node.js package)

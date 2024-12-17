@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing adventure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <div class="start-content">
+      <h1>typing adventure</h1>
+      <p>test your typing skills across three challenging levels!</p>
+      
+      <div class="theme-selector-container">
+        <label for="theme-selector">choose your theme:</label>
+        <select id="theme-selector">
+          <option value="neon">neon blast</option>
+          <option value="pastel">pastel dream</option>
+          <option value="electric">electric surge</option>
+          <option value="ocean">ocean waves</option>
+        </select>
+      </div>
+
+      <div class="start-instructions">
+        <div class="instruction">
+          <span class="level-badge">1</span>
+          <p>type single letters before they disappear</p>
+        </div>
+        <div class="instruction">
+          <span class="level-badge">2</span>
+          <p>type 3-letter words quickly</p>
+        </div>
+        <div class="instruction">
+          <span class="level-badge">3</span>
+          <p>type 6-letter words with increasing speed</p>
+        </div>
+      </div>
+      <button id="start-button">start game</button>
+    </div>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div class="header">
+      <h1>typing adventure</h1>
+      <div class="game-stats">
+        <div class="stat">
+          <span class="label">level</span>
+          <span id="level">1</span>
+        </div>
+        <div class="stat">
+          <span class="label">score</span>
+          <span id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">lives</span>
+          <span id="lives">5</span>
+        </div>
+      </div>
+    </div>
+    <div id="play-area"></div>
+    <div class="input-section">
+      <input type="text" id="input-box" placeholder="type here..." autofocus />
+    </div>
+  </div>
+  <div id="game-over-modal" class="modal">
+    <div class="modal-content">
+      <h2>game over</h2>
+      <p>your final score: <span id="final-score">0</span></p>
+      <button id="restart-button">play again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
